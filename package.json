@@ -1,0 +1,23 @@
+{
+  "name": "markdown-css",
+  "version": "0.0.0",
+  "description": "markdown-css ============",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "~3.8.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elrrrrrrr/markdown-css.git"
+  },
+  "author": "elrrrrrrr@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elrrrrrrr/markdown-css/issues"
+  },
+  "homepage": "https://github.com/elrrrrrrr/markdown-css"
+}
