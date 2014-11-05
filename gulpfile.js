@@ -1,11 +1,13 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+    markdown = require('gulp-markdown');
 
 var paths = {
   stylus: ['stylus/*.styl'],
   html: ['html/*.html'],
-  jade: ['jade/*.jade']
+  jade: ['jade/*.jade'],
+  md:['md/*.md']
 };
 
 gulp.task('stylus', function() {
@@ -21,6 +23,12 @@ gulp.task('jade', function() {
     }))
     .pipe(gulp.dest('html'));
 });
+
+gulp.task('md', function() {
+  return gulp.src(paths.md)
+    .pipe(markdown())
+    .pipe(gulp.dest('render'))
+})
 
 gulp.task('watch', function() {
   gulp.watch(paths.stylus, ['stylus']);
